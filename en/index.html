@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../scripts/localization.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", setSelectedLanguage);
+    </script>
+    <title>English version</title>
+  </head>
+  <body>
+    English
+
+    <select id="switch-language-select" onchange="switchLanguage(this.value);">
+      <option value="en">English</option>
+      <option value="ua">Українська</option>
+    </select>
+  </body>
+</html>
