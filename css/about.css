@@ -1,0 +1,78 @@
+/* About Section */
+
+.about-content {
+  padding: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.devices-img {
+  width: 40vw;
+  margin-right: 7vw;
+}
+
+.devices-img img{
+  width: 100%;
+}
+
+.about-text{
+  height: 100%;
+}
+
+.goal-content {
+  margin: 8vh 1vw;
+}
+
+.goal-text-intro {
+  font-size: 1.4em;
+}
+
+.goal-text-intro strong{
+  color: #fcac45;
+}
+
+.goal-text-block {
+  margin-left: 20px;
+}
+
+.goal-text {
+  font-style: italic;
+  font-size: 1.4em;
+}
+
+ul.about-list{ margin: 30px 0 0 ;}
+ul.about-list li{
+	display: block;
+	font-size: 16px;
+	line-height: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+ul.about-list li span{ 
+	margin-right: 10px;
+}
+
+.cermonies-text h4{
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.cermonies-text p{
+  font-size: 1.3em;
+}
+
+.youtube-link, .map-link{
+  color: inherit;
+  font-weight: 400;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.map-link {
+  padding-left: 5px;
+}
+
+.youtube-link:hover {
+  color: #b31217;
+}

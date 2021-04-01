@@ -1,20 +1,1100 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="../scripts/localization.js"></script>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Церква ЄХБ "Преображення" м. Львів</title>
+    <meta
+      name="description"
+      content="Церква ЄХБ «Преображення» - новини, розклад зібрань, проповіді, заходи. Адреса: м. Львів, вул. Фабрична 21"
+    />
+    <meta
+      name="keywords"
+      content="львів,церква,євангельська церква,єхб преображення,львівська церква,церковь преображение ехб,церква у львові,баптиська церква"
+    />
+    <meta name="author" content="germon.org" />
+
+    <!-- Favicons
+    ================================================== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicons/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="apple-mobile-web-app-title" content="germon.org" />
+    <meta name="application-name" content="germon.org" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../fonts/fontawesome-free-5.15.2-web/css/all.css"
+    />
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="../css/aos.css" />
+
+    <!-- Slider
+    ================================================== -->
+    <link href="../css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="../css/owl.theme.css" rel="stylesheet" media="screen" />
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="../css/home.css" />
+    <link rel="stylesheet" type="text/css" href="../css/about.css" />
+    <link rel="stylesheet" type="text/css" href="../css/values.css" />
+    <link rel="stylesheet" type="text/css" href="../css/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../css/events.css" />
+    <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+
+    <link rel="stylesheet" href="../css/lightgallery.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" src="../js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+  </head>
+
+  <body>
+    <div id="loader">
+      <img src="../img/favicon.png" alt="" />
+    </div>
+    <!-- Navigation
+    ==========================================-->
+    <main id="page-content">
+      <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="header-container header-menu">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand page-scroll" href="#tf-home">
+              <picture>
+                <source
+                  srcset="../img/logo_white-min.png"
+                  media="(max-width: 768px)"
+                />
+                <source srcset="../img/logo_white.png" />
+                <img src="../img/logo_white.png" alt="logo" />
+              </picture>
+            </a>
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#tf-home" class="page-scroll">Головна</a></li>
+              <li><a href="#tf-about" class="page-scroll">Про нас</a></li>
+              <li>
+                <a href="#tf-values" class="page-scroll">Наші цінності</a>
+              </li>
+              <li><a href="#tf-gallery" class="page-scroll">Галерея</a></li>
+              <li>
+                <a href="#tf-events" class="page-scroll">Розклад заходів</a>
+              </li>
+              <li><a href="#tf-contact" class="page-scroll">Контакти</a></li>
+            </ul>
+          </div>
+
+          <div id="language-switch-container">
+            <label for="ukraine">
+              <input
+                type="radio"
+                name="language"
+                id="ua"
+                class="input-hidden"
+              />
+              <img
+                src="../img/ukraine.png"
+                alt="UA"
+                onclick="switchLanguage('ua')"
+              />
+            </label>
+
+            <label for="english">
+              <input
+                type="radio"
+                name="language"
+                id="en"
+                class="input-hidden"
+              />
+              <img
+                src="../img/united-kingdom.png"
+                alt="ENG"
+                onclick="switchLanguage('en')"
+              />
+            </label>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Home Page
+          ==========================================-->
+      <section id="tf-home" class="text-center screen-height">
+        <div class="overlay">
+          <div class="main-page-content" data-aos="zoom-in">
+            <h1>Будь <span class="color">вільний!</span></h1>
+            <p class="lead">
+              ...і пізнаєте істину, а істина вас вільними зробить!
+              <span class="lead-2">(Івана 8:32 UBIO)</span>
+            </p>
+          </div>
+          <a href="#tf-about" class="fa fa-chevron-down page-scroll"></a>
+        </div>
+      </section>
+
+      <!-- About Us Page
+          ==========================================-->
+      <section id="tf-about">
+        <div class="about-content">
+          <div
+            class="devices-img"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <img src="../img/translation_devices.png" alt="" />
+          </div>
+          <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+            <div class="section-title">
+              <h2>Ми - церква ЄХБ <strong>"Преображення"</strong> м. Львів</h2>
+              <hr />
+              <!-- <div class="clearfix"></div> -->
+            </div>
+            <div class="goal-content">
+              <p class="goal-text-intro">
+                І наша <strong class="color">місія</strong>:
+              </p>
+              <div class="goal-text-block">
+                <q class="goal-text"
+                  >Преображатися в образ Ісуса Христа та допомогти іншим
+                  преобразитися в той же образ.</q
+                >
+              </div>
+            </div>
+            <div class="cermonies-text">
+              <h4>
+                Запрошуємо вас відвідати наші зібрання <br />щонеділі о 9:30 або
+                11:30 за адресою
+                <a class="map-link page-scroll" href="#tf-map-section"
+                  ><i class="fas fa-map-marker-alt"></i> вул. Фабрична, 21</a
+                >
+              </h4>
+              <p>
+                Також, на нашому
+                <a
+                  target="_blank"
+                  class="youtube-link"
+                  href="https://www.youtube.com/c/germonlviv"
+                  >Youtube-каналі</a
+                >
+                доступна трансляція богослужіння та записи проповідей
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values Section
+          ==========================================-->
+      <section id="tf-values" class="text-center">
+        <div class="overlay">
+          <div class="container">
+            <div class="section-title center">
+              <h2><strong>Ми цінуємо</strong></h2>
+              <div class="line">
+                <hr />
+              </div>
+            </div>
+            <div class="space"></div>
+            <div class="values-container" id="values">
+              <div
+                class="value owl-page"
+                data-valuename="relationship"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <div class="value-img-block">
+                  <img
+                    class="value-img"
+                    src="../img/values/1_relationship.png"
+                    alt="relationship"
+                  />
+                </div>
+                <h5>
+                  Особистими<br />
+                  стосунками з Богом
+                </h5>
+              </div>
+
+              <div
+                class="value"
+                data-valuename="glory"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <div class="value-img-block">
+                  <img
+                    class="value-img"
+                    src="../img/values/2_glory.png"
+                    alt="glory"
+                  />
+                </div>
+                <h5>
+                  Славою, хвалою і<br />
+                  поклонінням Богові
+                </h5>
+              </div>
+
+              <div
+                class="value"
+                data-valuename="church"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <div class="value-img-block">
+                  <img
+                    class="value-img"
+                    src="../img/values/3_church.png"
+                    alt="church"
+                  />
+                </div>
+                <h5>
+                  Спільнотою<br />
+                  (Церквою)
+                </h5>
+              </div>
+
+              <div
+                class="value"
+                data-valuename="gospel"
+                data-aos="fade-up-right"
+                data-aos-duration="1000"
+              >
+                <div class="value-img-block">
+                  <img
+                    class="value-img"
+                    src="../img/values/4_gospel.png"
+                    alt="gospel"
+                  />
+                </div>
+                <h5>
+                  Свідченням про<br />
+                  Ісуса Христа
+                </h5>
+              </div>
+
+              <div
+                class="value"
+                data-valuename="serve"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="value-img-block">
+                  <img
+                    class="value-img"
+                    src="../img/values/5_serve.png"
+                    alt="serve"
+                  />
+                </div>
+                <h5>
+                  Служінням дарами<br />
+                  Духа Святого
+                </h5>
+              </div>
+
+              <div
+                class="col-md-2 col-sm-4 value"
+                data-valuename="family"
+                data-aos="fade-up-left"
+                data-aos-duration="1000"
+              >
+                <div class="value-img-block">
+                  <img
+                    class="value-img"
+                    src="../img/values/6_family.png"
+                    alt="family"
+                  />
+                </div>
+                <h5>Сім'єю</h5>
+              </div>
+            </div>
+            <div class="row values-carousel-container">
+              <div class="col-md-12">
+                <div id="values-carousel" class="owl-carousel owl-theme">
+                  <div class="item value-item" id="relationship-value-item">
+                    <div class="item-image-container">
+                      <div class="item-image-block">
+                        <img src="../img/values/1_relationship.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <h4 class="item-title">
+                        1. Ми цінуємо особистими стосунками з Богом, і це
+                        виявляється в тому, що ми:
+                      </h4>
+                      <div class="item-text">
+                        <ul>
+                          <li>
+                            <b>приділяємо</b> щодня час читанню Писання і
+                            роздумам над ним та молитві, що є основою глибоких
+                            особистих стосунків з Богом для пізнання Його та
+                            Його волі;
+                          </li>
+                          <li>
+                            <b>докладаємо</b> зусиль, щоби жити згідно з
+                            Біблійними принципами та ділитися ними з іншими
+                            людьми, заохочуючи їх до читання, роздумування та
+                            практичного застосування Писання в повсякденному
+                            житті;
+                          </li>
+                          <li>
+                            <b>змінюємося</b> під впливом Слова Божого та Духа
+                            Святого в образ Христа, наслідуючи Його характер.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item value-item" id="glory-value-item">
+                    <div class="item-image-container">
+                      <div class="item-image-block">
+                        <img src="../img/values/2_glory.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <h4 class="item-title">
+                        2. Ми цінуємо славою, хвалою і поклонінням Богові, і це
+                        виявляється в тому, що ми:
+                      </h4>
+                      <div class="item-text">
+                        <ul>
+                          <li>
+                            <b>навчаємо,</b> як правильно поклонятися Богу в
+                            Дусі та Істині;
+                          </li>
+                          <li>
+                            <b>заохочуємо</b> до справжнього поклоніння Богові,
+                            яке виявляється через: характер (поведінку);
+                            посвячений час для прославлення і хвали Бога в
+                            молитвах, піснях та музиці; через посвячене служіння
+                            людям;
+                          </li>
+                          <li>
+                            <b>організовуємо</b> зібрання і служіння церкви для
+                            того, щоби люди щиро прославляли Бога та поклонялися
+                            Йому через молитву, музику, спів та особисте
+                            служіння.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item value-item" id="church-value-item">
+                    <div class="item-image-container">
+                      <div class="item-image-block">
+                        <img src="../img/values/3_church.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <h4 class="item-title">
+                        3. Ми цінуємо спільнотою (Церквою), і це виявляється в
+                        тому, що ми:
+                      </h4>
+                      <div class="item-text">
+                        <ul>
+                          <li>
+                            <b>дбаємо</b> про єдність спільноти, не зважаючи на
+                            численні відмінності один від одного в характері,
+                            даруваннях, здібностях, в служінні;
+                          </li>
+                          <li>
+                            <b>приймаємо</b> участь у Вечері Господній для
+                            спільності з Христом та Церквою;
+                          </li>
+                          <li>
+                            <b>будуємо</b> відкриті та щирі відносини через
+                            добрі вчинки та уважність до потреб один одного;
+                          </li>
+                          <li>
+                            <b>приймаємо</b> активну участь в різних зібраннях,
+                            домашніх групах та служіннях церкви, підтримуючи її
+                            своїми молитвами, дарами, талантами і щедрими
+                            пожертвами.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item value-item" id="gospel-value-item">
+                    <div class="item-image-container">
+                      <div class="item-image-block">
+                        <img src="../img/values/4_gospel.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <h4 class="item-title">
+                        4. Ми цінуємо свідченням про Ісуса Христа, і це
+                        виявляється в тому, що ми:
+                      </h4>
+                      <div class="item-text">
+                        <ul>
+                          <li>
+                            <b>свідчимо</b> про Нього іншим людям своїм життям
+                            та словом;
+                          </li>
+                          <li>
+                            <b>молимося</b> за місіонерів, підтримуємо їх
+                            фінансово та споряджаємо на місію членів церкви;
+                          </li>
+                          <li>
+                            <b>організовуємо</b> євангелізаційні заходи;
+                            соціальні проекти; використовуємо інтернет ресурс
+                            для донесення Євангелії людям.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item value-item" id="serve-value-item">
+                    <div class="item-image-container">
+                      <div class="item-image-block">
+                        <img src="../img/values/5_serve.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <h4 class="item-title">
+                        5. Ми цінуємо служінням відповідно до дарів Духа
+                        Святого, і це виявляється в тому, що ми:
+                      </h4>
+                      <div class="item-text">
+                        <ul>
+                          <li>
+                            <b>використовуємо</b> служіння дарами Духа Святого
+                            для того, щоб приносити славу Богові, збудовувати
+                            один одного та будувати церкву і приносити їй
+                            користь;
+                          </li>
+                          <li>
+                            <b>служимо</b> та закликаємо інших ефективно служити
+                            відповідно до духовних дарів;
+                          </li>
+                          <li>
+                            <b>зосереджені</b> на досягнення бачення та цілей
+                            помісної Церкви, а не особистих.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item value-item" id="family-value-item">
+                    <div class="item-image-container">
+                      <div class="item-image-block">
+                        <img src="../img/values/6_family.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-body">
+                      <h4 class="item-title">
+                        6. Ми цінуємо сім’єю, і це виявляється в тому, що ми:
+                      </h4>
+                      <div class="item-text">
+                        <ul>
+                          <li>
+                            <b>служимо</b> для побудови в своїх сім’ях атмосфери
+                            любові і довіри, злагоди та прийняття, вкладаючи
+                            особистий час, фізичні і емоційні зусилля та
+                            матеріальні ресурси, тощо;
+                          </li>
+                          <li>
+                            <b>розвиваємо</b> сімейне служіння в нашій церкві
+                            для побудови біблійних взаємовідносин між чоловіком
+                            і дружиною, а також між батьками та дітьми через
+                            проведення дошлюбного навчання; сімейних семінарів і
+                            конференцій; кризового консультування, тощо;
+                          </li>
+                          <li>
+                            <b>поширюємо</b> біблійні сімейні цінності у
+                            суспільстві через участь у масових акціях на
+                            підтримку сімейних цінностей; проведення сімейних
+                            свят, семінарів, конференцій та особистого
+                            консультування.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section
+          ==========================================-->
+      <div id="tf-gallery" class="screen-height">
+        <div>
+          <!-- Container -->
+          <div class="section-title text-center center">
+            <h2><strong>Галерея</strong></h2>
+            <div class="line">
+              <hr />
+            </div>
+          </div>
+          <div class="space"></div>
+
+          <div class="gallery-container">
+            <ul id="gallery" class="list-unstyled row">
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_0076-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_0076.JPG"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_0226-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_0226.JPG"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_0340-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_0340.JPG"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_0497-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_0497.JPG"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_0607-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_0607.JPG"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_1026-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_1026.JPG"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_9347-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_9347.jpg"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_1195-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_1195.jpg"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_9481-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_9481.jpg"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_2379-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_2379.jpg"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_1203-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_1203.jpg"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+              <li
+                class="col-xs-6 col-sm-4 col-md-3"
+                data-src="../img/gallery/IMG_1225-min.JPG"
+                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
+                data-pinterest-text="Pin it1"
+                data-tweet-text="share on twitter 1"
+              >
+                <a href="">
+                  <img
+                    class="img-responsive"
+                    src="../img/gallery/IMG_1225.jpg"
+                    alt="Thumb-1"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Events Section
+          ==========================================-->
+      <div id="tf-events" class="text-center">
+        <div class="overlay">
+          <div class="container">
+            <div class="section-title center">
+              <h2><strong>Наші заходи</strong></h2>
+            </div>
+          </div>
+          <div class="events-content">
+            <div class="filter-section">
+              <div class="filter-items">
+                <p class="filter-items-title">Оберіть категорію:</p>
+                <div class="filter-item">
+                  <input
+                    type="checkbox"
+                    id="all-events"
+                    name="category1"
+                    checked
+                  />
+                  <label for="all-events" id="all-events-label"
+                    >Всі заходи</label
+                  >
+                </div>
+
+                <div class="filter-item">
+                  <input type="checkbox" id="family" name="category-item" />
+                  <label for="family">Сімейні</label>
+                </div>
+
+                <div class="filter-item">
+                  <input type="checkbox" id="children" name="category-item" />
+                  <label for="children">Для дітей</label>
+                </div>
+
+                <div class="filter-item">
+                  <input type="checkbox" id="youth" name="category-item" />
+                  <label for="youth">Для молоді</label>
+                </div>
+
+                <div class="filter-item">
+                  <input type="checkbox" id="women" name="category-item" />
+                  <label for="women">Для жінок</label>
+                </div>
+
+                <div class="filter-item">
+                  <input type="checkbox" id="online" name="category-item" />
+                  <label for="online">Онлайн</label>
+                </div>
+              </div>
+            </div>
+            <div class="week-calendar-section">
+              <div class="week-calendar">
+                <ul class="week-days-columns">
+                  <h5 class="day-title" data-day-id="1">Понеділок</h5>
+                  <h5 class="day-title" data-day-id="2">Вівторок</h5>
+                  <h5 class="day-title" data-day-id="3">Середа</h5>
+                  <h5 class="day-title" data-day-id="4">Четвер</h5>
+                  <h5 class="day-title" data-day-id="5">П'ятниця</h5>
+                  <h5 class="day-title" data-day-id="6">Субота</h5>
+                  <h5 class="day-title" data-day-id="0">Неділя</h5>
+                </ul>
+                <ul class="week-events-columns dragscroll">
+                  <div class="day-section" data-day-id="1">
+                    <!-- <h5 class="day-title">Понеділок</h5> -->
+                    <div class="day-events" id="mon-events"></div>
+                  </div>
+                  <div class="day-section" data-day-id="2">
+                    <!-- <h5 class="day-title">Вівторок</h5> -->
+                    <div class="day-events" id="tue-events"></div>
+                  </div>
+                  <div class="day-section" data-day-id="3">
+                    <!-- <h5 class="day-title">Середа</h5> -->
+                    <div class="day-events" id="wed-events"></div>
+                  </div>
+                  <div class="day-section" data-day-id="4">
+                    <!-- <h5 class="day-title">Четвер</h5> -->
+                    <div class="day-events" id="thur-events"></div>
+                  </div>
+                  <div class="day-section" data-day-id="5">
+                    <!-- <h5 class="day-title">П'ятниця</h5> -->
+                    <div class="day-events" id="fri-events"></div>
+                  </div>
+                  <div class="day-section" data-day-id="6">
+                    <!-- <h5 class="day-title">Субота</h5> -->
+                    <div class="day-events" id="sat-events"></div>
+                  </div>
+                  <div class="day-section" data-day-id="0">
+                    <!-- <h5 class="day-title">Неділя</h5> -->
+                    <div class="day-events" id="sun-events"></div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Sections
+          ==========================================-->
+      <div id="tf-contact">
+        <div class="container">
+          <div class="text-center">
+            <div class="section-title center">
+              <h2><strong>Контакти</strong></h2>
+              <div class="line">
+                <hr />
+              </div>
+            </div>
+          </div>
+          <div class="contact-container">
+            <div class="col-sm-6 main-info-section">
+              <div class="footer-content">
+                <ul class="list-icons">
+                  <li class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    79041, м. Львів, вул. Фабрична, 21
+                  </li>
+                  <li class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-phone-alt"></i>
+                    </div>
+                    +38 067 672 2197; +38 032 292 49 86
+                  </li>
+                  <li class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    mount.germon@gmail.com
+                  </li>
+                </ul>
+                <p class="contact-text">
+                  Щоб дізнатися більше про майбутні заходи та побачити новини з
+                  життя церкви, підписуйтеся на наші сторінки в соціальних
+                  мережах:
+                </p>
+                <ul class="social-links">
+                  <li class="instagram">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/germon_church"
+                      ><i class="fab fa-instagram-square"></i
+                    ></a>
+                  </li>
+                  <li class="youtube">
+                    <a
+                      target="_blank"
+                      href="https://www.youtube.com/c/germonlviv"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li class="facebook">
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/pages/HtmlCoder/714570988650168"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 contact-form-section">
+              <h4 class="contact-form-title">Напишіть нам</h4>
+              <div class="footer-content">
+                <form role="form" id="footer-form">
+                  <div class="form-group has-feedback">
+                    <label class="sr-only" for="name2">Ім'я</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name2"
+                      placeholder="Ім'я"
+                      name="name2"
+                      required
+                      autocomplete="none"
+                    />
+                    <i class="fa fa-user form-control-feedback"></i>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <label class="sr-only" for="email2">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email2"
+                      placeholder="Email"
+                      name="email2"
+                      required
+                    />
+                    <i class="fa fa-envelope form-control-feedback"></i>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <label class="sr-only" for="message2">Повідомлення</label>
+                    <textarea
+                      class="form-control"
+                      rows="8"
+                      id="message2"
+                      placeholder="Повідомлення"
+                      name="message2"
+                      required
+                    ></textarea>
+                    <i class="fa fa-pencil-alt form-control-feedback"></i>
+                  </div>
+                  <input
+                    type="submit"
+                    value="Надіслати"
+                    class="btn btn-default"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="tf-map-section" class="map-section">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.4931903661036!2d23.97352201567509!3d49.833189979395016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7619c7363cd%3A0x9e230eb26eae10d1!2z0KbQtdGA0LrQstCwINCf0YDQtdC-0LHRgNCw0LbQtdC90L3Rjw!5e0!3m2!1suk!2sua!4v1614589156318!5m2!1suk!2sua"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="footer-section">
+        <div class="text-center"></div>
+
+        <footer id="footer">
+          <div class="footer-items">
+            <div class="footer-left">
+              <p>&#169; 2021 | Церква ЄХБ «Преображення»</p>
+            </div>
+            <div class="footer-right">
+              <ul class="footer-social">
+                <li>
+                  <a target="_blank" href="https://www.facebook.com/germon.lviv"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/germon_church"
+                    ><i class="fab fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.youtube.com/c/germonlviv"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.isotope.js"></script>
+
+    <script src="../js/owl.carousel.js"></script>
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="../js/main.js"></script>
+    <!-- <script type="text/javascript" src="../js/values.js"></script> -->
+    <script type="module" src="../js/events/events.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../js/dragscroll.js"></script>
+
+    <!-- animation on scroll library -->
+    <script src="../js/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <!-- <script src="https://kit.fontawesome.com/2d266558be.js" crossorigin="anonymous"></script> -->
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/lib/js/lightgallery.min.js"></script> -->
+
+    <!-- lightgallery plugins -->
+    <!-- <script src="node_modules/lightgallery.js/src/js/lightgallery.js"></script>
+    <script src="node_modules/lightgallery.js/src/js/lg-utils.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
+
+    <script src="../js/localization.js"></script>
     <script>
       window.addEventListener("DOMContentLoaded", setSelectedLanguage);
     </script>
-    <title>Українська версія</title>
-  </head>
-  <body>
-    Українська
+    <!-- <script>
+        lightGallery(document.getElementById('lightgallery'));
+    </script> -->
 
-    <select id="switch-language-select" onchange="switchLanguage(this.value);">
-      <option value="en">English</option>
-      <option value="ua">Українська</option>
-    </select>
+    <script type="text/javascript">
+      lightGallery(document.getElementById("gallery"), {
+        thumbnail: true,
+        animateThumb: false,
+        showThumbByDefault: false,
+        mode: "lg-fade",
+      });
+    </script>
   </body>
 </html>

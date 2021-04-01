@@ -1,0 +1,166 @@
+#tf-values{
+	background: url(../img/values-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+
+#tf-values .overlay{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	height: 100%;
+	background-attachment: fixed;
+	padding: 40px 0;
+}
+
+/* .values-container {
+	width: 90vw;
+	margin: 0 auto;
+} */
+
+.values-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.value {
+	cursor: pointer;
+  transition: 0.25s ease-in-out all;
+	width: 15%;
+	/* height: 30vh; */
+}
+
+.value-img-block {
+  border: 0.2em solid #45c8fc;
+	width: 6vw;
+	height: 6vw;
+  margin: 0 auto 15px;
+	border-radius: 50%;
+	transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease-in-out all;
+}
+
+.value-img {
+	filter: invert(1);
+	height: 50%;
+  transition: 0.25s ease-in-out all;
+}
+
+.value > h5 {
+	font-weight: 500;
+	font-size: 0.9em;
+	line-height: 1.2em;
+}
+
+#tf-values .value:hover>.value-img-block{
+	background-color: #45c8fc;
+}
+
+#tf-values .value:hover .value-img{
+  opacity: 1;
+}
+
+/* Carousel */
+
+.values-carousel-container {
+	margin-top: 50px;
+	/* display: flex;
+	justify-content: center; */
+}
+
+.values-carousel-container .col-md-12 {
+	padding: 0;
+}
+
+.value-item {
+	background-color: rgba(255, 255, 255, 1);
+	display: flex;
+	justify-content: space-between;
+	height: 45vh;
+	width: 100%;
+	color: #333;
+	text-align: left;
+}
+
+.item-image-container {
+	width: 30%;
+	background-size: cover;
+	background-position: center;
+}
+
+.item-image-block {
+	background-color: rgba(0, 0, 0, 0.466);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+.item-image-container img{
+	/* padding: 100px 30px; */
+	filter: invert(1);
+	width: 50%;
+	opacity: 0.85;
+}
+
+.item-body {
+	margin: 20px 40px 0 50px;
+	width: 70%;
+}
+
+.item-title {
+	max-width: 90%;
+	text-align: left;
+	font-weight: 550;
+	font-size: 1.4em;
+}
+
+.item-text {
+	margin-top: 30px;
+	text-align: justify;
+}
+
+.item-text li{
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+
+/* Backgrounds */
+
+#relationship-value-item .item-image-container {
+	background-image: url('../img/values/1_relationship_bg-min.jpg');
+}
+
+#glory-value-item .item-image-container {
+	background-image: url('../img/values/2_glory_bg-min.jpg');
+}
+
+#church-value-item .item-image-container {
+	background-image: url('../img/values/3_church_bg-min.jpg');
+}
+
+#gospel-value-item .item-image-container {
+	background-image: url('../img/values/4_gospel_bg-min.jpg');
+}
+
+#serve-value-item .item-image-container {
+	background-image: url('../img/values/5_serve_bg-min.jpg');
+}
+
+#family-value-item .item-image-container {
+	background-image: url('../img/values/6_family_bg-min.jpg');
+}
