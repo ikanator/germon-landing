@@ -37,7 +37,7 @@ function switchLanguage(lang = "ua") {
  */
 function redirectToLanguage() {
   const localization = localStorage.getItem("localization") || "ua";
-  switchLanguage("ua");
+  switchLanguage(localization);
 
   location = localization;
 }
