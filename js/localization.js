@@ -1,4 +1,8 @@
 const { pathname } = window.location;
+const LOCALIZATION_SWITCH = {
+  en: "ua",
+  ua: "en",
+};
 
 /**
  * @function getLanguageFromURL
@@ -26,8 +30,11 @@ function switchLanguage(lang = "ua") {
   localStorage.setItem("localization", lang);
 
   const urlLang = getLanguageFromURL();
-  if (urlLang !== lang && isLanguageValid(urlLang)) {
-    location = urlLang;
+  if (lang !== urlLang && isLanguageValid(lang)) {
+    const newLocation = pathname
+      .split("/")
+      .map((path) => LOCALIZATION_SWITCH[path] || path);
+    location = newLocation;
   }
 }
 
