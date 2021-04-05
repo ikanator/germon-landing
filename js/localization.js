@@ -31,9 +31,13 @@ function switchLanguage(lang = "ua") {
 
   const urlLang = getLanguageFromURL();
   if (lang !== urlLang && isLanguageValid(lang)) {
+    if (!pathname.includes("ua") && !pathname.includes("en")) {
+      location.replace(`${pathname}lang`);
+    }
+
     const newLocation = pathname
       .split("/")
-      .map((path) => LOCALIZATION_SWITCH[path] || path)
+      .map((path) => LOCALIZATION_SWITCH[lang] || path)
       .join("/");
     location.replace(newLocation);
   }
