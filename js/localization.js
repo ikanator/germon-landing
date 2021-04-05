@@ -33,8 +33,9 @@ function switchLanguage(lang = "ua") {
   if (lang !== urlLang && isLanguageValid(lang)) {
     const newLocation = pathname
       .split("/")
-      .map((path) => LOCALIZATION_SWITCH[path] || path);
-    location = newLocation;
+      .map((path) => LOCALIZATION_SWITCH[path] || path)
+      .join("/");
+    location.replace(newLocation);
   }
 }
 
@@ -45,8 +46,6 @@ function switchLanguage(lang = "ua") {
 function redirectToLanguage() {
   const localization = localStorage.getItem("localization") || "ua";
   switchLanguage(localization);
-
-  location = localization;
 }
 
 /**
