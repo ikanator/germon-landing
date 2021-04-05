@@ -49,6 +49,7 @@ function switchLanguage(lang = "ua") {
  */
 function redirectToLanguage() {
   const localization = localStorage.getItem("localization") || "ua";
+  if (getLanguageFromURL() === localization) return;
   switchLanguage(localization);
 }
 
