@@ -1,9 +1,11 @@
+const { pathname } = window.location;
+
 /**
  * @function getLanguageFromURL
  * @returns {string} language pathname
  */
 function getLanguageFromURL() {
-  return location?.split("/")?.pop() || "ua";
+  return pathname?.replace(/\/$/, "")?.split("/")?.pop() || "ua";
 }
 
 /**
