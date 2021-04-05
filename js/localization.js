@@ -32,7 +32,7 @@ function switchLanguage(lang = "ua") {
   const urlLang = getLanguageFromURL();
   if (lang !== urlLang && isLanguageValid(lang)) {
     if (!pathname.includes("ua") && !pathname.includes("en")) {
-      return location.replace(`${pathname}lang`);
+      return location.replace(`${pathname}${lang}`);
     }
 
     const newLocation = pathname
