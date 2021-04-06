@@ -6,7 +6,6 @@ const LOCALIZATION_SWITCH = {
 const isLocalized = pathname.includes("ua") || pathname.includes("en");
 
 window.addEventListener("DOMContentLoaded", () => {
-  console.log(isLocalized);
   if (isLocalized) setSelectedLanguage();
   else redirectToLanguage();
 });
