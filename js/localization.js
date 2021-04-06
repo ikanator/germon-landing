@@ -3,13 +3,20 @@ const LOCALIZATION_SWITCH = {
   en: "ua",
   ua: "en",
 };
+const isLocalized = pathname.includes("ua") || pathname.includes("en");
+
+window.addEventListener("DOMContentLoaded", () => {
+  console.log(isLocalized);
+  if (isLocalized) setSelectedLanguage();
+  else redirectToLanguage();
+});
 
 /**
  * @function getLanguageFromURL
  * @returns {string} language pathname
  */
 function getLanguageFromURL() {
-  return pathname?.replace(/\/$/, "")?.split("/")?.pop() || "ua";
+  return pathname?.replace(/\/$/, "")?.split("/")?.pop();
 }
 
 /**
@@ -30,16 +37,21 @@ function switchLanguage(lang = "ua") {
   localStorage.setItem("localization", lang);
 
   const urlLang = getLanguageFromURL();
+  console.log("switch", urlLang, lang);
   if (lang !== urlLang && isLanguageValid(lang)) {
-    if (!pathname.includes("ua") && !pathname.includes("en")) {
-      return location.replace(`${pathname}${lang}`);
+    let newPathname = "";
+    if (!isLocalized) {
+      newPathname = `${pathname}${lang}`;
+    } else {
+      newPathname = pathname.replace(LOCALIZATION_SWITCH[lang], lang);
     }
 
-    const newLocation = pathname
-      .split("/")
-      .map((path) => LOCALIZATION_SWITCH[lang] || path)
-      .join("/");
-    location.replace(newLocation);
+    location.replace(newPathname);
+    //   const newLocation = pathname
+    //     .split("/")
+    //     .map((path) => LOCALIZATION_SWITCH[lang] || path)
+    //     .join("/");
+    //   location.replace(newLocation);
   }
 }
 
@@ -49,6 +61,7 @@ function switchLanguage(lang = "ua") {
  */
 function redirectToLanguage() {
   const localization = localStorage.getItem("localization") || "ua";
+
   if (getLanguageFromURL() === localization) return;
   switchLanguage(localization);
 }
