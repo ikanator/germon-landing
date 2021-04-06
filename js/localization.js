@@ -46,11 +46,6 @@ function switchLanguage(lang = "ua") {
     }
 
     location.replace(newPathname);
-    //   const newLocation = pathname
-    //     .split("/")
-    //     .map((path) => LOCALIZATION_SWITCH[lang] || path)
-    //     .join("/");
-    //   location.replace(newLocation);
   }
 }
 
