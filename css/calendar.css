@@ -1,0 +1,24 @@
+#tf-calendar {
+  display: flex;
+  justify-content: center;
+}
+
+#tf-container > .google-calendar {
+  max-width: 1000px;
+  width: 100%;
+  height: 600px;
+}
+
+/* Hide large calendar on small devices */
+@media (max-width: 768px) {
+  #google-calendar-lg {
+    display: none;
+  }
+}
+
+/* Hide small calendar on large devices */
+@media (min-width: 769px) {
+  #google-calendar-sm {
+    display: none;
+  }
+}
